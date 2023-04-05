@@ -91,6 +91,15 @@
   }
 }
 
+.header-image{
+  background-color: #8C52FF;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
