@@ -97,7 +97,7 @@ function calculateLoanCost(loanAmount,interestRate,numberMonthlyPayments){
 
     numberMonthlyPayments = yearsToMonths(numberMonthlyPayments)
 
-    //formula to calculate loan cost NEEDS FIXED 
+    //formula to calculate loan cost 
     let loanCost = (loanAmount * interestRate * numberMonthlyPayments)/(loanDuration.value)/(12) 
     return parseFloat(loanCost.toFixed(2))
 }
@@ -127,7 +127,7 @@ function validate(){
         homeValue.value==="" || downPayment.value==="" || interestRate.value===""|| loanDuration.value===""
     ){
         let alert = document.createElement("div");
-        alert.className = "btn red btn-large";
+        alert.className = "btn bg-danger btn-large";
         alert.innerHTML = `<span> Please complete all fields </span>`;
         alert.style.margin = ".5rem 35%";
         form.parentNode.insertBefore(alert,form);

@@ -100,6 +100,7 @@
   background-position: center;
 }
 
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -183,6 +184,13 @@ abbr[title] {
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+white-space: pre-wrap;
+word-break: break-all;
+word-wrap: break-word;
 }
 
 address {
